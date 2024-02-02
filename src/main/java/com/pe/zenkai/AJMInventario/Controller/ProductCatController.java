@@ -5,14 +5,12 @@ import com.pe.zenkai.AJMInventario.Models.ProductCat;
 import com.pe.zenkai.AJMInventario.Repository.ProductCatRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 @RequestMapping("/api/productcat")
+@CrossOrigin(origins = "*")
 @RestController
 public class ProductCatController {
     
